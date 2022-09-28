@@ -11,7 +11,7 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int DELAY = 70;
     final int x[] = new int[GAME_UNITS];
     final int y[] = new int[GAME_UNITS];
-    int bodyParts = 6;
+    int bodyParts = 60;
     int applesEaten = 0;
     int appleX;
     int appleY;
@@ -57,7 +57,7 @@ public class GamePanel extends JPanel implements ActionListener {
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else {
                     g.setColor(new Color(45, 180, 0));
-//                  // Rainbow snake -> g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
+//                  rainbow g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 }
             }
